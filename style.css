@@ -1,0 +1,328 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 100px 0;
+    background: #15403f;
+}
+
+.section_title{
+    margin-bottom: 30px;
+}
+
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+.section_title h2:hover{
+    background-color: black;
+}
+
+header{
+    background: black;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.navlinks{
+    display: flex;
+}
+
+.navlinks li a{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.navlinks li a:hover{
+    background: #15403f;
+}
+
+.logo h2 a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.inner_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+.child_anasayfa{
+    flex-basis: 45%;
+}
+
+.child_anasayfa img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.child_anasayfa img:hover{
+    transform: scale(0.9);
+}
+
+.child_anasayfa h1{
+    font-size: 50px;
+    color: #fff;
+}
+.child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+.child_anasayfa a{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.btn{
+    background: whitesmoke;
+    padding: 7px 8px;
+    border-radius: 25px;
+    color: black;
+    border: 1px solid whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: transparent;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.skills_child{
+    flex-basis: 31%;
+    color: #fff;
+    padding: 25px  20px;
+    background: #204b4a;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .1s ease-in;
+}
+.skills_child:hover{
+    border: 1px solid whitesmoke;
+}
+.skills_child .icon{
+    font-size: 25px;
+    color: #fff;
+}
+.skills_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.skills_child p{
+    font-size: 16px;
+}
+
+
+
+.sertf_child{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.sertf_child{
+    flex-basis: 31%;
+    color: #fff;
+    padding: 25px  20px;
+    background: #204b4a;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .1s ease-in;
+}
+.sertf_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+
+.proj_child{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.proj_child{
+    flex-basis: 31%;
+    color: #fff;
+    padding: 25px  20px;
+    background: #204b4a;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .1s ease-in;
+}
+.proj_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.hakkim p{
+    text-align: center;
+    color: #fff;
+}
+
+.ilet1 p{
+    text-align: center;
+    color: #fff;
+}
+
+.ilet2 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ilet2 input,
+.ilet2 textarea {
+    width: 80%;
+    max-width: 400px;
+    justify-content: center;
+    text-align: center;
+    background: #204b4a;
+    color: white;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sociaIcons {
+    display: flex;
+    align-items: center;
+}
+
+.sociaIcons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 3em; /* Logoların boyutunu ayarlayabilirsiniz */
+    transition: color 0.5s ease;
+}
+.sociaIcons a:hover {
+    color: black;
+    background-color: white;
+}
+
+.footerNav {
+    margin-top: 20px; /* Logolar ile yazılar arasındaki boşluğu ayarlayabilirsiniz */
+    text-align: center;
+}
+
+.footerNav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Yazılar arasındaki boşluğu ayarlayabilirsiniz */
+}
+
+.footerNav ul li {
+    margin-right: 20px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: #fff; /* Hover durumunda yazı rengini değiştirmek istiyorsanız ekleyebilirsiniz */
+}
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo div {
+    margin-right: 20px; /* Telefon ve e-posta bilgileri arasındaki boşluğu ayarlayabilirsiniz */
+    color: white;
+}
+
+.contactInfo i {
+    font-size: 1.5em; /* İkon boyutunu ayarlayabilirsiniz */
+    margin-right: 5px;
+    color: white; /* İkon rengini beyaz yapın */
+}
