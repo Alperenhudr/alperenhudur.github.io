@@ -9,26 +9,25 @@
     
 
 <?php
-// Veritabanı bağlantısı
-$host = "localhost"; // Veritabanı sunucusu
-$username = "root"; // Veritabanı kullanıcı adı
-$password = ""; // Veritabanı parolası
-$dbname = "feedback"; // Veritabanı adı
 
-// Veritabanı bağlantısını oluştur
+$host = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "feedback"; 
+
+
 $conn = new mysqli($host, $username, $password, $dbname);
 
-// Bağlantıyı kontrol et
 if ($conn->connect_error) {
     die("Bağlantı hatası: " . $conn->connect_error);
 }
 
-// POST verilerini güvenli bir şekilde alın
+
 $name = mysqli_real_escape_string($conn, $_POST["name"]);
 $mail = mysqli_real_escape_string($conn, $_POST["mail"]);
 $message = mysqli_real_escape_string($conn, $_POST["message"]);
 
-// Verileri veritabanına ekleyin
+
 $sql = "INSERT INTO iletisim (name, mail, message) VALUES ('$name', '$mail', '$message')";
 
 if ($conn->query($sql) === TRUE) {
@@ -37,6 +36,6 @@ if ($conn->query($sql) === TRUE) {
     echo "Hata: " . $sql . "<br>" . $conn->error;
 }
 
-// Veritabanı bağlantısını kapat
+
 $conn->close();
 ?>
